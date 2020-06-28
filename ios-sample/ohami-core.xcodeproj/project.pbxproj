@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B71E6C5D24A8121F00DF8C20 /* Nautilus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71E6C5C24A8121F00DF8C20 /* Nautilus.framework */; };
+		B71E6C5E24A8121F00DF8C20 /* Nautilus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B71E6C5C24A8121F00DF8C20 /* Nautilus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B784C9C22455C05B007E0B05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784C9C12455C05B007E0B05 /* AppDelegate.swift */; };
+		B784C9C42455C05B007E0B05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784C9C32455C05B007E0B05 /* SceneDelegate.swift */; };
+		B784C9C62455C05B007E0B05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784C9C52455C05B007E0B05 /* ContentView.swift */; };
+		B784C9C82455C05D007E0B05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B784C9C72455C05D007E0B05 /* Assets.xcassets */; };
+		B784C9CB2455C05D007E0B05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B784C9CA2455C05D007E0B05 /* Preview Assets.xcassets */; };
+		B784C9CE2455C05D007E0B05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B784C9CC2455C05D007E0B05 /* LaunchScreen.storyboard */; };
+		B784C9FC24567111007E0B05 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784C9FB24567111007E0B05 /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B71E6C5F24A8121F00DF8C20 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B71E6C5E24A8121F00DF8C20 /* Nautilus.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B71E6C5C24A8121F00DF8C20 /* Nautilus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nautilus.framework; path = "../Nautilus/build/xcode-frameworks/Nautilus.framework"; sourceTree = "<group>"; };
+		B784C9BE2455C05B007E0B05 /* ohami-core.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ohami-core.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B784C9C12455C05B007E0B05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B784C9C32455C05B007E0B05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B784C9C52455C05B007E0B05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B784C9C72455C05D007E0B05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B784C9CA2455C05D007E0B05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B784C9CD2455C05D007E0B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B784C9CF2455C05D007E0B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B784C9F22455C9CE007E0B05 /* FormulaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FormulaKit.framework; path = "../../StudioProjects/FormulaKit/FormulaKit/build/xcode-frameworks/FormulaKit.framework"; sourceTree = "<group>"; };
+		B784C9F72455CF92007E0B05 /* FormulaCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FormulaCore.framework; path = "../../StudioProjects/FormulaKit/FormulaCore/build/xcode-frameworks/FormulaCore.framework"; sourceTree = "<group>"; };
+		B784C9FB24567111007E0B05 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B7C349DF24848B3F005BC734 /* FormulaCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FormulaCore.framework; path = "../FormulaCore/build/xcode-frameworks/FormulaCore.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B784C9BB2455C05B007E0B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B71E6C5D24A8121F00DF8C20 /* Nautilus.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B784C9B52455C05B007E0B05 = {
+			isa = PBXGroup;
+			children = (
+				B784C9C02455C05B007E0B05 /* ohami-core */,
+				B784C9BF2455C05B007E0B05 /* Products */,
+				B784C9F12455C9CE007E0B05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B784C9BF2455C05B007E0B05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B784C9BE2455C05B007E0B05 /* ohami-core.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B784C9C02455C05B007E0B05 /* ohami-core */ = {
+			isa = PBXGroup;
+			children = (
+				B784C9C12455C05B007E0B05 /* AppDelegate.swift */,
+				B784C9C32455C05B007E0B05 /* SceneDelegate.swift */,
+				B784C9C52455C05B007E0B05 /* ContentView.swift */,
+				B784C9C72455C05D007E0B05 /* Assets.xcassets */,
+				B784C9CC2455C05D007E0B05 /* LaunchScreen.storyboard */,
+				B784C9CF2455C05D007E0B05 /* Info.plist */,
+				B784C9C92455C05D007E0B05 /* Preview Content */,
+				B784C9FB24567111007E0B05 /* DetailView.swift */,
+			);
+			path = "ohami-core";
+			sourceTree = "<group>";
+		};
+		B784C9C92455C05D007E0B05 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B784C9CA2455C05D007E0B05 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B784C9F12455C9CE007E0B05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B71E6C5C24A8121F00DF8C20 /* Nautilus.framework */,
+				B784C9F72455CF92007E0B05 /* FormulaCore.framework */,
+				B7C349DF24848B3F005BC734 /* FormulaCore.framework */,
+				B784C9F22455C9CE007E0B05 /* FormulaKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B784C9BD2455C05B007E0B05 /* ohami-core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B784C9E82455C05D007E0B05 /* Build configuration list for PBXNativeTarget "ohami-core" */;
+			buildPhases = (
+				B784C9F62455CAF7007E0B05 /* Run Script */,
+				B784C9BA2455C05B007E0B05 /* Sources */,
+				B784C9BB2455C05B007E0B05 /* Frameworks */,
+				B784C9BC2455C05B007E0B05 /* Resources */,
+				B71E6C5F24A8121F00DF8C20 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ohami-core";
+			productName = formulakit;
+			productReference = B784C9BE2455C05B007E0B05 /* ohami-core.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B784C9B62455C05B007E0B05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Sean Najera";
+				TargetAttributes = {
+					B784C9BD2455C05B007E0B05 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B784C9B92455C05B007E0B05 /* Build configuration list for PBXProject "ohami-core" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B784C9B52455C05B007E0B05;
+			productRefGroup = B784C9BF2455C05B007E0B05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B784C9BD2455C05B007E0B05 /* ohami-core */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B784C9BC2455C05B007E0B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B784C9CE2455C05D007E0B05 /* LaunchScreen.storyboard in Resources */,
+				B784C9CB2455C05D007E0B05 /* Preview Assets.xcassets in Resources */,
+				B784C9C82455C05D007E0B05 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B784C9F62455CAF7007E0B05 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$(SRCROOT)../Nautilus/build/xcode-frameworks\" ./gradlew :FormulaCore:packForXCode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B784C9BA2455C05B007E0B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B784C9C22455C05B007E0B05 /* AppDelegate.swift in Sources */,
+				B784C9FC24567111007E0B05 /* DetailView.swift in Sources */,
+				B784C9C42455C05B007E0B05 /* SceneDelegate.swift in Sources */,
+				B784C9C62455C05B007E0B05 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B784C9CC2455C05D007E0B05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B784C9CD2455C05D007E0B05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B784C9E62455C05D007E0B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B784C9E72455C05D007E0B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B784C9E92455C05D007E0B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ohami-core/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Nautilus/build/xcode-frameworks";
+				INFOPLIST_FILE = "ohami-core/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marianatek.nautilus.ohamicore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B784C9EA2455C05D007E0B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ohami-core/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Nautilus/build/xcode-frameworks";
+				INFOPLIST_FILE = "ohami-core/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marianatek.nautilus.ohamicore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B784C9B92455C05B007E0B05 /* Build configuration list for PBXProject "ohami-core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B784C9E62455C05D007E0B05 /* Debug */,
+				B784C9E72455C05D007E0B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B784C9E82455C05D007E0B05 /* Build configuration list for PBXNativeTarget "ohami-core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B784C9E92455C05D007E0B05 /* Debug */,
+				B784C9EA2455C05D007E0B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B784C9B62455C05B007E0B05 /* Project object */;
+}
