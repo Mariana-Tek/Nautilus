@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B71E6C5D24A8121F00DF8C20 /* Nautilus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71E6C5C24A8121F00DF8C20 /* Nautilus.framework */; };
-		B71E6C5E24A8121F00DF8C20 /* Nautilus.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B71E6C5C24A8121F00DF8C20 /* Nautilus.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B71E6C6124A9727B00DF8C20 /* MarianaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71E6C6024A9727B00DF8C20 /* MarianaKit.framework */; };
+		B71E6C6224A9727B00DF8C20 /* MarianaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B71E6C6024A9727B00DF8C20 /* MarianaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B784C9C22455C05B007E0B05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784C9C12455C05B007E0B05 /* AppDelegate.swift */; };
 		B784C9C42455C05B007E0B05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784C9C32455C05B007E0B05 /* SceneDelegate.swift */; };
 		B784C9C62455C05B007E0B05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B784C9C52455C05B007E0B05 /* ContentView.swift */; };
@@ -19,13 +19,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B71E6C5F24A8121F00DF8C20 /* Embed Frameworks */ = {
+		B71E6C6324A9727B00DF8C20 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B71E6C5E24A8121F00DF8C20 /* Nautilus.framework in Embed Frameworks */,
+				B71E6C6224A9727B00DF8C20 /* MarianaKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -34,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		B71E6C5C24A8121F00DF8C20 /* Nautilus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nautilus.framework; path = "../Nautilus/build/xcode-frameworks/Nautilus.framework"; sourceTree = "<group>"; };
+		B71E6C6024A9727B00DF8C20 /* MarianaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MarianaKit.framework; path = "../MarianaKit/build/xcode-frameworks/MarianaKit.framework"; sourceTree = "<group>"; };
 		B784C9BE2455C05B007E0B05 /* ohami-core.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ohami-core.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B784C9C12455C05B007E0B05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B784C9C32455C05B007E0B05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B71E6C5D24A8121F00DF8C20 /* Nautilus.framework in Frameworks */,
+				B71E6C6124A9727B00DF8C20 /* MarianaKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +104,7 @@
 		B784C9F12455C9CE007E0B05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B71E6C6024A9727B00DF8C20 /* MarianaKit.framework */,
 				B71E6C5C24A8121F00DF8C20 /* Nautilus.framework */,
 				B784C9F72455CF92007E0B05 /* FormulaCore.framework */,
 				B7C349DF24848B3F005BC734 /* FormulaCore.framework */,
@@ -122,7 +124,7 @@
 				B784C9BA2455C05B007E0B05 /* Sources */,
 				B784C9BB2455C05B007E0B05 /* Frameworks */,
 				B784C9BC2455C05B007E0B05 /* Resources */,
-				B71E6C5F24A8121F00DF8C20 /* Embed Frameworks */,
+				B71E6C6324A9727B00DF8C20 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +198,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$(SRCROOT)../Nautilus/build/xcode-frameworks\" ./gradlew :FormulaCore:packForXCode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
+			shellScript = "cd \"$(SRCROOT)../MarianaKit/build/xcode-frameworks\" ./gradlew :FormulaCore:packForXCode -PXCODE_CONFIGURATION=${CONFIGURATION}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -347,13 +349,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ohami-core/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Nautilus/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../MarianaKit/build/xcode-frameworks";
 				INFOPLIST_FILE = "ohami-core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.marianatek.nautilus.ohamicore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marianatek.marianakit.ohamicore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -367,13 +369,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ohami-core/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Nautilus/build/xcode-frameworks";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../MarianaKit/build/xcode-frameworks";
 				INFOPLIST_FILE = "ohami-core/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.marianatek.nautilus.ohamicore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.marianatek.marianakit.ohamicore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

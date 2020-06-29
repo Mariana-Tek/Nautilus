@@ -38,7 +38,7 @@ android {
 
 dependencies {
     implementation(kotlin("stdlib-jdk7", KotlinCompilerVersion.VERSION))
-    implementation(project(":Nautilus"))
+    implementation(project(":MarianaKit"))
 
     implementation(Deps.APP_COMPAT)
     implementation(Deps.CORE_KTX)

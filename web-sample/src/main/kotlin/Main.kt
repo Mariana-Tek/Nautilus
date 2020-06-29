@@ -1,6 +1,6 @@
 import react.dom.*
 import kotlin.browser.document
-import com.marianatek.nautilus.platformName
+import com.marianatek.marianakit.platformName
 
 fun main() {
     render(document.getElementById("root")) {

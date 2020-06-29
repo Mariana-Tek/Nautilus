@@ -7,33 +7,24 @@
 //
 
 import SwiftUI
-import Nautilus
+import MarianaKit
 
 struct ContentView: View {
 
-    let msg = CommonKt.createApplicationScreenMessage()
+    let msg = ActualKt.platformName()
     
     var body: some View {
         NavigationView {
-            TabView {
-                NavigationLink(destination: DetailView(discipline: "Steam"), label: {
-                    Text("The First Tab: \(msg)")
-                })
-                    .tabItem {
-                    Image(systemName: "1.square.fill")
-                    Text("First")
-                }
-                Text("Another Tab: \(msg)")
-                    .tabItem {
-                        Image(systemName: "2.square.fill")
-                        Text("Second")
+                TabView {
+                    NavigationLink(destination: DetailView(discipline: "20,000 Leagues Under The Sea"), label: {
+                        Text("Kotlin Rocks on \(msg)")
+                    })
+                        .tabItem {
+                        Image(systemName: "1.square.fill")
+                        Text("First")
                     }
-                Text("The Last Tab: \(msg)")
-                    .tabItem {
-                        Image(systemName: "3.square.fill")
-                        Text("Third")
-                    }
-            }.navigationBarTitle("Disciplines")
+                
+                }.navigationBarTitle("Nautilus")
         }
     }
 }

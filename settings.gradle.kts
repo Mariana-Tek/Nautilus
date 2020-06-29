@@ -1,4 +1,4 @@
-include(":android-sample", ":Nautilus", ":web-sample")
+include(":android-sample", ":MarianaKit", ":web-sample")
 enableFeaturePreview("GRADLE_METADATA")
 pluginManagement {
     repositories {

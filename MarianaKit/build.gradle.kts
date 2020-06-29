@@ -27,7 +27,7 @@ kotlin {
     iOSTarget("ios") {
         binaries {
             framework {
-                baseName = "Nautilus"
+                baseName = "MarianaKit"
             }
         }
     }

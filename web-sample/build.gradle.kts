@@ -33,7 +33,7 @@ dependencies {
     implementation(npm("react-share"))
 
     // Shared Library: Nautilus
-    implementation(project(":Nautilus"))
+    implementation(project(":MarianaKit"))
 
     //Coroutines (chapter 8)
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.3.7")

@@ -1,4 +1,4 @@
-package com.marianatek.nautilus
+package com.marianatek.marianakit
 
 import platform.UIKit.UIDevice
 
