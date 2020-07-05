@@ -10,6 +10,7 @@ kotlin {
         all {
             languageSettings.apply {
                 useExperimentalAnnotation("kotlinx.coroutines.ExperimentalCoroutinesApi")
+                useExperimentalAnnotation("kotlinx.coroutines.InternalCoroutinesApi")
             }
         }
     }
@@ -69,6 +70,7 @@ kotlin {
         implementation(Deps.Coroutines.JDK)
         implementation(Deps.Coroutines.ANDROID)
         implementation(Deps.Ktor.ANDROID_SERIALIZER)
+        implementation(Deps.Ktor.ANDROID_CORE)
         implementation(Deps.Serialization.JVM)
     }
 
@@ -96,6 +98,8 @@ kotlin {
 }
 
 val packForXcode by tasks.creating(Sync::class) {
+    group = "build"
+
     val targetDir = File(buildDir, "xcode-frameworks")
 
     /// selecting the right configuration for the iOS

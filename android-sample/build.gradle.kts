@@ -42,6 +42,8 @@ dependencies {
 
     implementation(Deps.APP_COMPAT)
     implementation(Deps.CORE_KTX)
+    implementation(Deps.Coroutines.ANDROID)
     implementation(Deps.CONSTRAINT_LAYOUT)
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.2.0")
     testImplementation(Deps.JUNIT)
 }

@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
                 TabView {
-                    NavigationLink(destination: DetailView(discipline: "20,000 Leagues Under The Sea"), label: {
+                    NavigationLink(destination: DetailView(), label: {
                         Text("Kotlin Rocks on \(msg)")
                     })
                         .tabItem {
