@@ -46,4 +46,7 @@ dependencies {
     implementation(Deps.CONSTRAINT_LAYOUT)
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.2.0")
     testImplementation(Deps.JUNIT)
+    implementation("com.github.Mariana-Tek.DKouple:library:4.3.0")
+    implementation("com.github.Mariana-Tek.DKouple:annotation:4.3.0")
+    implementation("androidx.recyclerview:recyclerview:1.1.0")
 }

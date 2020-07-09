@@ -9,30 +9,15 @@ import SwiftUI
 import MarianaKit
 
 struct DetailView: View {
-  
-    @State var locationName: String = ""
     
-    let mariana = Mariana()
+    let location: Location
 
     var body: some View {
-        Text(locationName)
-            .onAppear(perform: execute)
-    }
-    
-    private func execute() {
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            let locationsCall = mariana.getLocations()
-            
-            locationsCall.get { completion in
-                guard let locationData = completion as? ResultTypeSuccess<AnyObject>,
-                      let locations = locationData.data as? Array<Location> else {
-                    
-                    
-                    return
-                }
-                
-                self.locationName = locations.first?.name ?? "First Location"
-            }
+        VStack {
+            Text(location.name ?? "Location-\(location.id)").font(.largeTitle)
+            Text(location.regionResponse?.name ?? "N/A").font(.subheadline)
+            Text(location.addressLine1 ?? "N/A").font(.subheadline)
+            Text(location.phoneNumber ?? "N/A").font(.subheadline)
         }
     }
 }

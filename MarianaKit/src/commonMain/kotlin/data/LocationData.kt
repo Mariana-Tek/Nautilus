@@ -44,7 +44,6 @@ class LocationDataImpl(
             override fun cancel() {
                 networkCall?.cancel()
             }
-
         }
     }
 }

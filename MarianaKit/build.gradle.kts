@@ -45,7 +45,7 @@ kotlin {
         compilations.all {
             this.compileKotlinTask.kotlinOptions {
                 moduleKind = "umd"
-                sourceMap = true
+                sourceMap = false
                 sourceMapEmbedSources = null
             }
         }
